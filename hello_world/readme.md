@@ -2,95 +2,29 @@ Hi!
 Welcome to a first test.
 This is to ensure you know how to do the questions.
 This is a fairly simple task.
-
-Description
-
-Calculate a+b
-Input
-
+# Description: Calculate a+b
+# Input:
 Two integer a,b (0<=a,b<=10)
-Output
-
+# Output:
 Output a+b
-Sample Input
-
+# Sample Input
 1 2
-Sample Output
-
+# Sample Output
 3
-Hint
-
+# Hint
 Q: Where are the input and the output?
-
 A: Your program shall always read input from stdin (Standard Input) and write output to stdout (Standard Output). For example, you can use 'scanf' in C or 'cin' in C++ to read from stdin, and use 'printf' in C or 'cout' in C++ to write to stdout.
-
 You shall not output any extra data to standard output other than that required by the problem, otherwise you will get a "Wrong Answer".
-
-User programs are not allowed to open and read from/write to files. You will get a "Runtime Error" or a "Wrong Answer"if you try to do so.
-
-Here is a sample solution to problem 1000 using C++/G++:
-#include <iostream>
-
-using namespace std;
-
-int main()
-{
-    int a,b;
-    cin >> a >> b;
-    cout << a+b << endl;
-    return 0;
-}
-It's important that the return type of main() must be int when you use G++/GCC,or you may get compile error.
-
-Here is a sample solution to problem 1000 using C/GCC:
-#include <stdio.h>
-
-int main()
-{
-    int a,b;
-    scanf("%d %d",&a, &b);
-    printf("%d\n",a+b);
-    return 0;
-}
-Here is a sample solution to problem 1000 using Pascal:
-program p1000(Input,Output);
-
-var
-  a,b:Integer;
-begin
-   Readln(a,b);
-   Writeln(a+b);
-end.
-Here is a sample solution to problem 1000 using Java:
-
-Now java compiler is jdk 1.5, next is program for 1000
-import java.io.*;
-import java.util.*;
-public class Main
-{
-            public static void main(String args[]) throws Exception
-            {
-                    Scanner cin=new Scanner(System.in);
-                    int a=cin.nextInt(),b=cin.nextInt();
-                    System.out.println(a+b);
-            }
-}
-Old program for jdk 1.4
-import java.io.*;
-import java.util.*;
-
-public class Main
-{
-    public static void main (String args[]) throws Exception
-    {
-        BufferedReader stdin = 
-            new BufferedReader(
-                new InputStreamReader(System.in));
-
-        String line = stdin.readLine();
-        StringTokenizer st = new StringTokenizer(line);
-        int a = Integer.parseInt(st.nextToken());
-        int b = Integer.parseInt(st.nextToken());
-        System.out.println(a+b);
-    }
-}
+User programs are not allowed to open and read from/write to files.
+In python, it is: sys.stdin.readline()
+In C, C++, you have to use: cin, cout
+In Java, you have to use: Scanner
+Please use: https://open.kattis.com/help for more information.
+# How to submit
+If you are using C, C++ and Java, for version reason, please upload both a .java / .cpp / .c file, as well as a compiled executable to avoid strange things. This can help debug.
+If you are using Python, upload .py files would suffice.
+# How does Github classroom work for me?
+Always submit main.py or compile to main Executable as that's how test.py works.
+After test.py verify all pre-tests you should be fine.
+If test.py has an error you will see a clear error.
+Here is a demo:
