@@ -4,7 +4,7 @@ import subprocess
 
 def main():
     # Ask for a filename
-    filename = "main222"
+    filename = "main"
 
 
     # List all the .in files
